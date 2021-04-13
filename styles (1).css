@@ -1,0 +1,47 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1f 4fr;
+    grid-template-columns: .1fr 5fr .1fr;
+}
+
+nav {
+    grid-column: 1/4;
+    background-color: grey;
+    padding: 20px 0px;
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 3fr 0.5fr;
+}
+
+nav a {
+    margin: 0px 1%;
+    color: white;
+    justify-self: stretch;
+    text-align: right;
+}
+
+.logo {
+    grid-column: 1/3;
+}
+
+h2 {
+    color: #92f97e;
+}
+
+p {
+    color: aliceblue;
+}
+
+.navLinks {
+    grid-column: 3/4;
+    justify-self: stretch;
+    text-align: right;
+    font-family:
+}
+
