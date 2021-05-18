@@ -1,3 +1,8 @@
+html {
+    background-color: white;
+    height: 100vh;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -19,11 +24,27 @@ nav {
     grid-template-columns: 0.1fr 1fr 3fr 0.5fr;
 }
 
+.navLinks {
+    grid-column: 3/4;
+    justify-self: stretch;
+    text-align: center;
+    align-self: center;
+    padding-top: 18px;
+}
+
 nav a {
     margin: 0px 1%;
-    color: white;
-    justify-self: stretch;
-    text-align: right;
+}
+
+nav a:hover {
+    background: #b1fd9e;
+    height: 10px;
+}
+
+.cart:hover {
+    background: aliceblue;
+    height: 20px;
+    justify-content: bottom;
 }
 
 .logo {
@@ -38,10 +59,27 @@ p {
     color: aliceblue;
 }
 
-.navLinks {
-    grid-column: 3/4;
-    justify-self: stretch;
-    text-align: right;
-    font-family:
+h1 {
+    color: white;
 }
 
+.container {
+    background-color: black;
+    min-height: 70vh;
+    width: 100%;
+    margin: 30px auto;
+    grid-column: 2/3;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    list-style: none;
+    padding: 20px;
+}
+
+.products li img {
+    width: 100%;
+    background-color: white;
+}
